@@ -1,4 +1,4 @@
-import classes.gohtafsar.*;
+import gohtafsar.*;
 import java.util.*;
 
 class main{
