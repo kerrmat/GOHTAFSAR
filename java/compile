@@ -1,0 +1,8 @@
+#!/bin/bash
+
+javac gohtafsar/Bullet.java
+javac gohtafsar/Weapon.java
+javac gohtafsar/Player.java
+javac drivers/GraphicsDriver.java
+javac drivers/Driver.java
+javac main.java
