@@ -1,11 +1,15 @@
 package gohtafsar;
 
 public class Weapon{
+	//mag is bullets in mag, capacity is total possible bullets
+	//each gun has a number of appropriate ammo
+	//using type variable instead of polymorphism, may change
 	int mag;
 	int capacity;
 	int ammo;
 	int type;
 	
+	//default weapon is assault rifle
 	public Weapon(){
 		mag = 30;
 		capacity = 30;
@@ -13,6 +17,7 @@ public class Weapon{
 		type = 1;
 	}
 	
+	//full mag is at cap, so c works for both
 	public Weapon(int c, int a, int t){
 		mag = c;
 		capacity = c;
@@ -20,11 +25,14 @@ public class Weapon{
 		type = t;
 	}
 	
+	//fire gun, update mag, no bullet created yet
 	public void fire(){
 		if(mag != 0)
 			mag -= 1;
 	}
 	
+	//handles all logic for reloading, should be feature complete
+	//NOTE: ammo == -1 is shorthand for infinite ammo
 	public void reload(){
 		if(ammo == -1)
 			mag = capacity;
