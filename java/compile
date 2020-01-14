@@ -1,8 +1,21 @@
 #!/bin/bash
 
-javac gohtafsar/Bullet.java
-javac gohtafsar/Weapon.java
 javac gohtafsar/Player.java
+javac gohtafsar/Weapon.java
+
+javac gohtafsar/Bullet.java
+javac gohtafsar/arBullet.java
+javac gohtafsar/rlBullet.java
+javac gohtafsar/sgBullet.java
+javac gohtafsar/srBullet.java
+
+javac gohtafsar/Enemy.java
+javac gohtafsar/Warrior.java
+javac gohtafsar/Goliath.java
+javac gohtafsar/Specials.java
+javac gohtafsar/Fodder.java
+
 javac drivers/GraphicsDriver.java
 javac drivers/Driver.java
+
 javac main.java
