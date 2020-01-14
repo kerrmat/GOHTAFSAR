@@ -1,19 +1,3 @@
-# Untitled-GOHTAVSAR-Project
+# Untitled-GOHTAFSAR-Project
 
-Alex if you're reading this look down
-
-
-
-     _
-   _| |
- _| | |
-| | | |
-| | | | __
-| | | |/  \
-|       /\ \
-|      /  \/
-|      \  /\
-|       \/ /
- \        /
-  |     /
-  |    |
+check the wiki
