@@ -8,15 +8,14 @@ public class Player{
 	int yCoord = 0;
 	int speed = 1;
 	
-	Controller controls;
+	int controls = 0;
 	Weapon loadout;
 	
 	public Player(){
-		controls = new Controller();
 		loadout = new Weapon();
 	}
 	
-	public Player(int x, int y, Controller cont, Weapon weap){
+	public Player(int x, int y, int cont, Weapon weap){
 		xCoord = x;
 		yCoord = y;
 		controls = cont;
@@ -28,7 +27,10 @@ public class Player{
 		System.out.println("SHIELDS: " + shields);
 		System.out.println("LOADOUT: ");
 			loadout.status();
-		System.out.println("CONTROLS: ");
-			controls.status();
+		System.out.println("CONTROLS: " + controls);
+	}
+	
+	public Weapon getLO(){
+		return loadout;
 	}
 }

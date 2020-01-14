@@ -13,15 +13,16 @@ public class Weapon{
 		type = 1;
 	}
 	
-	public Weapon(int m, int c, int a, int t){
-		mag = m;
+	public Weapon(int c, int a, int t){
+		mag = c;
 		capacity = c;
 		ammo = a;
 		type = t;
 	}
 	
 	public void fire(){
-		mag -= 1;
+		if(mag != 0)
+			mag -= 1;
 	}
 	
 	public void reload(){
