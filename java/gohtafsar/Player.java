@@ -6,9 +6,10 @@ public class Player{
 	int shields = 100;
 	
 	//coords will be for position, speed used to update coords
+
 	int xCoord = 20;
 	int yCoord = 200;
-	int speed = 1;
+	int speed = 4;
 	
 	//controls 0 will correspond to WASD, 1 to arrow keys
 	int controls = 0;

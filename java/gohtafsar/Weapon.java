@@ -27,8 +27,10 @@ public class Weapon{
 	
 	//fire gun, update mag, no bullet created yet
 	public void fire(){
-		if(mag != 0)
+		if(mag != 0 && capacity != 0)
 			mag -= 1;
+		else if(mag == -1)
+			System.out.println("CREATE ENEMY BULLET");
 	}
 	
 	//handles all logic for reloading, should be feature complete
