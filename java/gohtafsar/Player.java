@@ -6,8 +6,8 @@ public class Player{
 	int shields = 100;
 	
 	//coords will be for position, speed used to update coords
-	int xCoord = 0;
-	int yCoord = 0;
+	int xCoord = 20;
+	int yCoord = 200;
 	int speed = 1;
 	
 	//controls 0 will correspond to WASD, 1 to arrow keys
@@ -38,5 +38,21 @@ public class Player{
 	//getters and setters
 	public Weapon getLO(){
 		return loadout;
+	}
+	
+	public int getxCoord(){
+		return xCoord;
+	}
+	
+	public int getyCoord(){
+		return yCoord;
+	}
+	
+	public void setxCoord(int x){
+		xCoord = x;
+	}
+	
+	public void setyCoord(int y){
+		yCoord = y;
 	}
 }
