@@ -29,5 +29,7 @@ public class GraphicsDriver extends Frame {
       Font font = new Font("Serif", Font.PLAIN, 24);
       g2.setFont(font);
       g2.drawString("This is THE FIRST GRAPHICS of gohtafsar", 50, 70); 
+	  
+	  
    }
 }
