@@ -2,30 +2,31 @@ package gohtafsar;
 
 public class Player{
 	//player has health and shields
-	int health = 100;
-	int shields = 100;
+	int health = 1;
+	int shields = 4;
 	
 	//coords will be for position, speed used to update coords
-
-	int xCoord = 20;
+	int xCoord = 100;
 	int yCoord = 200;
 	int speed = 4;
 	
-	//controls 0 will correspond to WASD, 1 to arrow keys
-	int controls = 0;
+	//control array, 0 WASD, 1 TFGH, 2 IJKL, 3 arrow keys
+	int controls;
 	//weapon object
 	Weapon loadout;
 	
+	//width, height
+	int w = 66;
+	int h = 90
+	
 	//default constructor gives player default weapon (assault rifle)
 	public Player(){
+		controls = 0;
 		loadout = new Weapon();
 	}
 	
-	public Player(int x, int y, int cont, Weapon weap){
-		xCoord = x;
-		yCoord = y;
+	public Player(int cont){
 		controls = cont;
-		loadout = weap;
 	}
 	
 	public void status(){
@@ -47,6 +48,14 @@ public class Player{
 	
 	public int getyCoord(){
 		return yCoord;
+	}
+	
+	public int getW(){
+		return w;
+	}
+	
+	public int getH(){
+		return h;
 	}
 	
 	public void setxCoord(int x){
